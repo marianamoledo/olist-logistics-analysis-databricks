@@ -37,6 +37,17 @@ Os dados contêm informações de pedidos feitos em um marketplace entre 2016 e 
 
 Essa base é bastante utilizada para estudos sobre comportamento de consumo, logística, avaliação de desempenho, ciência de dados e machine learning.
 
+### Por que escolhi a base da Olist?
+Escolhi a base de dados da Olist por ser um exemplo rico e realista de marketplace brasileiro, contendo várias tabelas relacionadas entre si, o que permite explorar diferentes dimensões do negócio, como logística, pagamento, avaliações e localização.
+
+<img width="2486" height="1496" alt="image" src="https://github.com/user-attachments/assets/71b43dd8-164d-46a0-b773-89ac77542275" />
+
+Essa estrutura relacional das tabelas, possibilita análises mais completas e realistas, como por exemplo:
+
+- Combinar informações de pedidos com prazos de entrega e localização geográfica.
+- Relacionar avaliações dos clientes com os prazos de entrega e forma de pagamento.
+- Avaliar o desempenho logístico por região e vendedor.
+
 ---
 
 ## 🔄 Ingestão dos dados no Databricks
@@ -47,9 +58,6 @@ Realizei a ingestão dos dados manualmente, direto na interface do **Databricks 
 2. Registrei cada arquivo como uma **tabela gerenciada** dentro do catálogo `olist_database`, no schema `default`
 3. As tabelas foram automaticamente reconhecidas e estruturadas com base no cabeçalho dos arquivos 
 4. A partir daí, os dados podem ser acessados via **SQL Editor** ou com PySpark nos notebooks :)
-   
-
-<img width="448" height="722" alt="image" src="https://github.com/user-attachments/assets/0ae1f93b-11b1-4ab7-acdd-d57a81ad80cb" />
 
 ---
 
