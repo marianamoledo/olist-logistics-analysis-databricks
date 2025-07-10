@@ -42,7 +42,7 @@ Escolhi a base de dados da Olist por ser um exemplo rico e realista de marketpla
 
 <img width="2486" height="1496" alt="image" src="https://github.com/user-attachments/assets/71b43dd8-164d-46a0-b773-89ac77542275" />
 
-Essa estrutura relacional das tabelas, possibilita análises mais completas e realistas, como por exemplo:
+Essa estrutura relacional das tabelas possibilita análises mais completas e realistas, como por exemplo:
 
 - Combinar informações de pedidos com prazos de entrega e localização geográfica.
 - Relacionar avaliações dos clientes com os prazos de entrega e forma de pagamento.
