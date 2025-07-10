@@ -8,9 +8,9 @@ O que vou tentar fazer nesse projeto é analisar dados reais de um marketplace b
 
 Com base na base pública da Olist, disponibilizada no Kaggle, irei explorar métricas relacionadas a tempo de entrega, atrasos e satisfação dos clientes. A partir dessa análise, espero conseguir gerar insights sobre a eficiência da operação logística em diferentes regiões do Brasil.
 
-Vou realizar a análise utilizando:
-
 ## Ferramentas Utilizadas
+
+Vou realizar a análise utilizando:
 
 ![Databricks](https://img.shields.io/badge/Databricks-Spark%20Platform-orange?logo=apache-spark&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
