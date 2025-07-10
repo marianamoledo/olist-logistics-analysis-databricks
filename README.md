@@ -10,7 +10,7 @@ Com base na base pública da Olist, disponibilizada no Kaggle, serão exploradas
 
 Vou realizar a análise utilizando:
 
-- **Databricks** para ingestão, processamento e modelagem dos dados
+- **Databricks Free Edition** para ingestão, processamento e modelagem dos dados
 - **Python + SQL (PySpark)** para tratamento e cálculo das métricas
 - **Power BI** para visualização dos resultados
 
