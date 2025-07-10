@@ -79,10 +79,3 @@ Realizei a ingestão dos dados manualmente, direto na interface do **Databricks 
 | `product_category_name_translation`    | Tradução das categorias de produtos |
 
 ---
-## Gerenciamento do Projeto
-
-Criei um board do Github para quem desejar acompanhar as tasks e o progresso do projeto:
-
-[Link para o Board do Projeto](https://github.com/users/marianamoledo/projects/1)
-
-*Em breve: documentação das transformações, cálculos de SLA, métricas e visualizações no Power BI.*
