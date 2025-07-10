@@ -13,7 +13,7 @@ Vou realizar a análise utilizando:
 - **Databricks Free Edition** para ingestão, processamento e modelagem dos dados
 - **Python + SQL (PySpark)** para tratamento e cálculo das métricas
 - **Power BI** para visualização dos resultados
-
+---
 ## Sobre os dados
 
 O conjunto de dados utilizado é o *Brazilian E-Commerce Public Dataset by Olist*, disponível no Kaggle:  
@@ -30,10 +30,21 @@ Os dados contêm informações de pedidos feitos em um marketplace entre 2016 e 
 
 Essa base é bastante utilizada para estudos sobre comportamento de consumo, logística, avaliação de desempenho, ciência de dados e machine learning.
 
-- **Schema**: `default`
-- **Formato**: Tabelas gerenciadas (Databricks Tables)
+---
 
-As tabelas foram automaticamente reconhecidas e estruturadas com base no cabeçalho dos arquivos :)
+## 🔄 Ingestão dos dados no Databricks
+
+Realizei a ingestão dos dados manualmente, direto na interface do **Databricks Free Edition**, da seguinte forma:
+
+1. Fiz o upload dos arquivos `.csv` para um volume do Unity Catalog
+2. Registrei cada arquivo como uma **tabela gerenciada** dentro do catálogo `olist_database`, no schema `default`
+3. As tabelas foram automaticamente reconhecidas e estruturadas com base no cabeçalho dos arquivos 
+4. A partir daí, os dados podem ser acessados via **SQL Editor** ou com PySpark nos notebooks :)
+   
+
+<img width="448" height="722" alt="image" src="https://github.com/user-attachments/assets/0ae1f93b-11b1-4ab7-acdd-d57a81ad80cb" />
+
+---
 
 ### 🗂️ Tabelas disponíveis
 
