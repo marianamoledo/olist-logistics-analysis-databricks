@@ -10,6 +10,13 @@ Com base na base pública da Olist, disponibilizada no Kaggle, irei explorar mé
 
 Vou realizar a análise utilizando:
 
+## Ferramentas Utilizadas
+
+![Databricks](https://img.shields.io/badge/Databricks-Spark%20Platform-orange?logo=apache-spark&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
+
 - **Databricks Free Edition** para ingestão, processamento e modelagem dos dados
 - **Python + SQL (PySpark)** para tratamento e cálculo das métricas
 - **Power BI** para visualização dos resultados
