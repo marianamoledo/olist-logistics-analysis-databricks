@@ -59,6 +59,9 @@ Realizei a ingestão dos dados manualmente, direto na interface do **Databricks 
 3. As tabelas foram automaticamente reconhecidas e estruturadas com base no cabeçalho dos arquivos 
 4. A partir daí, os dados podem ser acessados via **SQL Editor** ou com PySpark nos notebooks :)
 
+
+<img width="462" height="715" alt="image" src="https://github.com/user-attachments/assets/a636c6c1-c5da-4e7c-821d-06d9bf2f94b2" />
+
 ---
 
 ### 🗂️ Tabelas disponíveis
