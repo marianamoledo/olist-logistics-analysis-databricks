@@ -6,7 +6,7 @@ Oi :)
 
 O que vou tentar fazer nesse projeto é analisar dados reais de um marketplace brasileiro para investigar o desempenho logístico nas entregas de pedidos realizados entre 2016 e 2018.
 
-Com base na base pública da Olist, disponibilizada no Kaggle, serão exploradas métricas relacionadas a tempo de entrega, atrasos e satisfação dos clientes. A partir dessa análise, espero conseguir gerar insights sobre a eficiência da operação logística em diferentes regiões do Brasil.
+Com base na base pública da Olist, disponibilizada no Kaggle, irei explorar métricas relacionadas a tempo de entrega, atrasos e satisfação dos clientes. A partir dessa análise, espero conseguir gerar insights sobre a eficiência da operação logística em diferentes regiões do Brasil.
 
 Vou realizar a análise utilizando:
 
