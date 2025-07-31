@@ -50,21 +50,20 @@ Essa estrutura relacional das tabelas possibilita análises mais completas e rea
 
 ---
 
-## 🔄 Ingestão dos dados no Databricks
+## Camadas do Pipeline de Dados
 
-Realizei a ingestão dos dados manualmente, direto na interface do **Databricks Free Edition**, da seguinte forma:
+### 1. Bronze – Ingestão dos Dados Crus
 
-1. Fiz o upload dos arquivos `.csv` para um volume do Unity Catalog
-2. Registrei cada arquivo como uma **tabela gerenciada** dentro do catálogo `olist_database`, no schema `default`
-3. As tabelas foram automaticamente reconhecidas e estruturadas com base no cabeçalho dos arquivos 
-4. A partir daí, os dados podem ser acessados via **SQL Editor** ou com PySpark nos notebooks :)
+Nesta etapa, carreguei os arquivos `.csv` da base Olist manualmente para o **Databricks Free Edition**, com o objetivo de preservar os dados em seu estado original.  
 
+**Etapas:**
+1. Upload dos arquivos `.csv` para um volume do Unity Catalog
+2. Registro de cada arquivo como tabela gerenciada no catálogo `olist_database.default`
+3. Estruturação automática com base no cabeçalho dos arquivos
 
 <img width="462" height="715" alt="image" src="https://github.com/user-attachments/assets/a636c6c1-c5da-4e7c-821d-06d9bf2f94b2" />
 
----
-
-### 🗂️ Tabelas disponíveis
+Dessa forma, temos as seguintes tabelas disponíveis:
 
 | Tabela                                 | Origem do CSV |
 |----------------------------------------|----------------|
@@ -77,5 +76,27 @@ Realizei a ingestão dos dados manualmente, direto na interface do **Databricks 
 | `olist_products_dataset`               | Informações sobre os produtos |
 | `olist_sellers_dataset`                | Dados dos vendedores |
 | `product_category_name_translation`    | Tradução das categorias de produtos |
+
+---
+
+### 2. Silver – Tratamento e Enriquecimento
+- Cálculo de métricas logísticas:
+  - Tempo estimado de entrega
+  - Tempo real de entrega
+  - Dias de atraso
+  - Tempo entre aprovação e envio
+- Criação de flags binárias:
+  - `fl_delivered`, `fl_on_time`, `fl_late`, etc.
+- Criação da tabela `silver_orders`
+
+### 3. Gold – Modelagem Final para Consumo
+- Enriquecimento com dados de clientes, localização e produtos
+- Colunas auxiliares para filtros e visualização no Power BI (ex: `ano`, `estado`, `categoria`)
+- Dados exportáveis para visualização e análise
+
+---
+
+
+
 
 ---
